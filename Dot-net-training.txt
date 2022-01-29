@@ -1,0 +1,308 @@
+visual studio: 2019/2020/2022
+Sql Server 2014 or above.
+---------------------------------------------------
+C#:-
+	1- Datatype, variable, operators.
+	2- typecasting-
+			implicit typecasting
+			explicity typecasting
+	3- boxing and unboxing
+	4- control flow statements.
+			a- decision making statements.
+			b- switch case statements
+			c- Looping statements.
+	5- Array
+	6- function-
+		a- pre-define function
+		b- user define function.
+		
+	   a- Pre define function-
+			1- string & stringbuilder
+			2- math function
+			3- date time function
+			4- character handling function.
+	  b- User define function:-
+		a- simple function
+		b- function with out and ref.
+	7- OOP.(Object  Oriented Programming)
+		a- class
+			constructor, destructor
+			property, methods,static keyword.
+		b- inheritance
+		c- polymarphism
+		d- encapsulation
+		f- abstraction
+		g- interface.
+	8- Collections and Generic.
+	9- Exception and exception handling
+	10- Partial class, extension methods, sealed class.
+	11- event and delegates.
+-----------------------------
+SQL-
+	1- Data Definition Language(DDL):-
+			-create
+			- alter
+			- drop
+			- truncate
+			- sp_rename,sp_help etc.
+	2- Data Manipulation Language (DML):-
+			- insert
+			- update
+			- delete
+			- select
+	3- Data Control Language (DCL):-
+			- Grant
+			- invoke
+			- revoke
+	4- Transaction Control Language(TCL):-
+			- begin transaction
+			- rollback transaction
+			- commit transaction
+			- savepoint
+	
+	- joins-
+		inner join
+		outer join-
+			left outer
+			right outer
+			full outer
+		self join
+		cross join.
+	-  Sub-query
+	-  clouses and constraint.
+	- view-
+		simple view
+		complex view
+	- Transanct SQL-
+
+		- stored procedure
+		- stored function.
+	- trigger
+	- temp table
+	- index
+		
+----------------------------------------------------------
+
+class:
+constructor
+property
+methods
+---------------------------------------
+namespace app1{
+
+
+
+}
+-----------------------------------------------
+1-w.a.p. to enter Amount and calculate discount. where if amount
+	>=10000 then discount will be 20%, otherwise 10%.
+	also print rest amount.
+
+2- w.a.p. to enter any number and print factorial of it .
+3- w.a.p. to enter 3 number and print in assending sorted order.
+4- w.a.p. to enter any number and print table of it, using while loop.
+
+5- w.a.p. to enter any number and check the number is prime or not .
+--------------------------------------------------------------------
+constructor:
+		paramterise constructor
+		copy constructor
+		static constructor
+		private constructor
+----------------------------------------------
+property
+methods
+static member
+----------------------------------------
+Student obj=new Student();
+--------------------------------------------
+class BankingCustomer
+{
+public string AccountNo;
+public string CustomerName;
+public Decimal Amount;
+
+public BankingCustomer(string AcNo, string name, decimal amount)
+{
+this.AccountNo=AcNo;
+this.CustomerName=name;
+this.Amount=amount;
+}
+
+}
+--------------------------------------------------
+Collection:-
+	Collections are the readymade classes to read and write items  in a list. these are 2 type.
+	1- Non-generic collection 
+	2- Generic collection.
+1- Non- Generic collection:-  A non-generic collection usefull to read and write items in object form.
+	these classes exist in system.Collections; namespace.
+	Exa:
+		ArrayList
+		Stack
+		Queue
+		SortedList
+		HasTable.
+--------------------------------------------
+2- Generic Collection:- A generic collection is the typesafe collection, where user can define type at the time of declaration of class. these classes exist in System.Collections.Generic; namespace.
+
+	Exa:
+		List
+		Stack
+		Queue
+		SortedList
+Note:- a generic represented by <T> .
+------------------------------------------------
+
+1- ArrayList:-
+		add,addRange
+		remove , RemoveAt,removeRange
+		indexOf, lastIndex
+		insert,insertRange
+		clear
+		contains
+--------------------------------------------
+2- Stack:-
+		Stack list=new Stack();
+		list.push(item) //additem in LIFO style
+		list.pop() //remove item in LIFO style
+
+--------------------------------------------------------
+3- SortedList-
+
+		add(key,value) //store key  and value in object 				form.
+		
+	ArrayList list=new ArrayList();
+	list.Add(10);
+----------------------------------------------------
+
+Users-
+	create
+	read
+	delete
+	search
+	update
+------------------------------------
+select* from employees where id=id;
+
+-----------------------------------------------
+Exception and Exception Handling:-
+Exception is the runtime erros, which occurs during program execution, it abort the abnormal execution of program.
+to throw the exception , there is lots of c# classes, that are responsible for  these exception.
+like-
+	FormatException
+	DivideByZeroException
+	NullReferenceException
+	StackOverFlowException
+	IOException
+		and many more...
+-----------------------------------------
+To handle these exception c# provide try and catch block .
+
+Note: All the exception directly and indirectly drived from a base class, is called Exception.
+Example:-
+	try
+		{
+		//write all sensitive code here
+		}
+	catch(ExceptionHandler obj)
+	{
+	//handler code
+	}
+------------------------------------------------------
+Finally Keyword: finally keyword provide a block , which ensure gauranteed code execution, either exception occur or not.
+
+Throw :- keyword can be use to generate own/custome 	 exception.
+
+	throw new Excpetionclass;
+
+--------------------------------------------------------
+class ABC
+{
+public string message{get;set;}
+
+public ABC(string msg)
+{
+message=msg;
+}
+}
+------------------------------------
+class XYZ:ABC
+{
+
+public XYZ(string msg):base(msg){ //calling base class constructor
+
+}
+
+}
+------------------------------------------------
+File handling
+Partial Classes
+Event and Delegates
+Attribute
+Multithreading
+--------------------------------
+
+ASP.Net Core:-
+------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------
